@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: melodia-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node src/app.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: DB_HOST
+        value: blqanyoer21j1gqppdbo-mysql.services.clever-cloud.com
+      - key: DB_PORT
+        value: 3306
+      - key: DB_USER
+        value: uocieuml4onvutyg
+      - key: DB_PASSWORD
+        value: GO9TrB6XbRRLqeO0TwK6
+      - key: DB_NAME
+        value: blqanyoer21j1gqppdbo
+      - key: JWT_SECRET
+        value: c4a41cea70c86b8133d3bfb12bd2a2439365840c93831e8ae072eb74984b79422e87378f7c58190f861a82edf3516491f080246341f543dbc1cffd6cf0471d0d
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: 587
+      - key: SMTP_USER
+        value: rivergam49@gmail.com
+      - key: SMTP_PASS
+        value: dhnijhpkvckyvccj
+      - key: DEEZER_API
+        value: https://api.deezer.com
+      - key: CLIENT_URL
+        value: https://melodia-frontend.vercel.app
