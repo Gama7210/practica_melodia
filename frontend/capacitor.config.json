@@ -1,0 +1,32 @@
+{
+  "appId": "com.gamino.melodia",
+  "appName": "Melodía",
+  "webDir": "dist",
+  "server": {
+    "url": "http://192.168.100.17:5173",
+    "cleartext": true,
+    "androidScheme": "http"
+  },
+  "android": {
+    "backgroundColor": "#000000",
+    "allowMixedContent": true
+  },
+  "plugins": {
+    "StatusBar": {
+      "style": "Dark",
+      "backgroundColor": "#000000",
+      "overlaysWebView": true
+    },
+    "Keyboard": {
+      "resize": "body",
+      "style": "dark"
+    },
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#000000",
+      "showSpinner": false,
+      "splashFullScreen": true,
+      "splashImmersive": true
+    }
+  }
+}
